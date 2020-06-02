@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/af08fb0686.js" crossorigin="anonymous"></script>
+    <title>Carolina Portas</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header__container">
+            <ul>
+                <li>
+                    <a class="header__links" href='index.html'>Início</a>
+                </li>
+                <li>
+                    <a class="header__links" href='https://github.com/mikashii' target='blank'>Projetos</a>
+                </li>
+                <li>
+                    <a class="header__links" href='https://www.linkedin.com/in/carolinaportas/' target='blank'>Sobre</a>
+                </li>
+            </ul>
+            <img src="assets/logo.png">
+        </header>
+        
+        <section id="contact">
+            <div class="contact__container">
+                <h1 for="">Quer conversar? entre em contato!</h1>
+                <form action="" class="contact_form" method="POST">
+                    
+                    <input class="contact_form_input" type="text" placeholder="Nome">                    
+                    <input class="contact_form_input" type="email" placeholder="E-mail">
+                    <input class="contact_form_input" type="text" placeholder="Assunto">
+                    <textarea class="contact_form_textarea" name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <button href="mailto:carolina.portas@outlook.com" class="btn">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <canvas class="background"></canvas>
+    <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+    <script>
+        window.onload = function () {
+            Particles.init({
+                selector: '.background',
+                connectParticles: true,
+                speed: .2,
+                maxParticles: 55,
+                sizeVariations: 6,
+                color: ['#1E3226', '#799179']
+            });
+        };
+    </script>
+</body>
+
+</html>
