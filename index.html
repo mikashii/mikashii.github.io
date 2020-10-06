@@ -9,50 +9,105 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/af08fb0686.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Wow animation -->
+    <link rel="stylesheet" href="/node_modules/wow.js/css/libs/animate.css">
     <title>Carolina Portas</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header__container">
-            <ul>
-                <li>
-                    <a class="header__links" href='https://github.com/mikashii' target='blank'>Projetos</a>
+    <nav class="nav navbar-expand-sm navbar-light">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+            data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="primary_navigation">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a class="header__links  nav-link" href="#projetos" >Projetos</a>
                 </li>
-                <li>
-                    <a class="header__links" href='https://www.linkedin.com/in/carolinaportas/' target='blank'>Sobre</a>
+                <li class="list-inline-item">
+                    <a class="header__links nav-link" href='https://www.linkedin.com/in/carolinaportas/'
+                        target='blank'>Sobre</a>
                 </li>
             </ul>
-        </header>
-        <section class="hero__container">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="brand" class="hero__img">
-            </a>
-            <h1>Carolina Portas</h1>
-            <p>Front End Developer and ServiceNow Technical Consultant at <a
-                    href="https://www.linkedin.com/company/alparservice/" target="blank">AlparService</a></p>
-            <button class="btn" onclick="window.open('/contact.html')">Entrar em contato</button>
-        </section>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <section class="col-12 hero__container mb-4 wow fadeInUp">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="brand" class="hero__img">
+                </a>
+                <h1>Carolina Portas</h1>
+                <p>Front End Developer and ServiceNow Technical Consultant at <a
+                        href="https://www.linkedin.com/company/alparservice/"
+                        target="blank"><strong>AlparService</strong></a></p>
 
+                <!-- <button class="btn-custom" onclick="window.open('/contact.html')">Entrar em contato</button> -->
+            </section>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper" data-wow-delay=".12s">
+                    <h4>Trillo App</h4>
+                    <p>Booking app inspiration</p>
+                    <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-2 mt-md-0">
+                <div class="wow fadeInUp container__projetos__wrapper" data-wow-delay=".4s">
+                    <h4>Trillo App</h4>
+                    <p>Booking app inspiration</p>
+                    <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mt-2 mt-md-0">
+                <div class="wow fadeInUp container__projetos__wrapper" data-wow-delay=".6s">
+                    <h4>Trillo App</h4>
+                    <p>Booking app inspiration</p>
+                    <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>        
     </div>
 
 
 
-    <canvas class="background"></canvas>
-    <!-- <script src="node_modules/particlesjs/dist/particles.min.js"></script> -->
-    <script>
-        
-        window.onload = function () {
-            Particles.init({
-                selector: '.background',
-                connectParticles: true,
-                speed: .2,
-                maxParticles: 55,
-                sizeVariations: 6,
-                color: ['#1E3226', '#799179']
-            });
-        };
-    </script>
+
+
+        <canvas class="background" height="10000"></canvas>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+        <script src="node_modules/wow.js/dist/wow.min.js"></script>
+        <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+        <script>
+            window.onload = function () {
+                Particles.init({
+                    selector: '.background',
+                    connectParticles: false,
+                    speed: .3,
+                    maxParticles: 100,
+                    sizeVariations: 4,
+                    height: '1000px',
+                    color: ['#1E3226', '#799179']
+                });
+            };
+        </script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 
 </html>

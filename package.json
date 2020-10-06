@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "particlesjs": "^2.2.3",
-    "sass": "^1.26.5"
+    "sass": "^1.26.5",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
