@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="nav navbar-expand-sm navbar-light">
+    <nav class="nav navbar-expand-sm navbar-light p-2">
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
             data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -35,44 +35,70 @@
             </ul>
         </div>
     </nav>
-    <div class="container mt-4">
+    <div class="container hero__container">
         <div class="row">
-            <section class="col-12 hero__container mb-4 wow fadeInUp">
-                <a href="index.html">
-                    <img src="assets/logo.png" alt="brand" class="hero__img">
-                </a>
+            <section class="col-12 wow fadeInUp d-flex flex-column align-items-center" data-wow-delay=".1s">
+                <a href="index.html"><img src="assets/logo.png" alt="brand" class="hero__img"></a>
                 <h1>Carolina Portas</h1>
                 <p>Front End Developer and ServiceNow Technical Consultant at <a
                         href="https://www.linkedin.com/company/alparservice/"
                         target="blank"><strong>AlparService</strong></a></p>
-
                 <!-- <button class="btn-custom" onclick="window.open('/contact.html')">Entrar em contato</button> -->
             </section>
         </div>
+            
+                <div class="row wow fadeInUp" data-wow-delay=".5s">
+                    <div class="col-12 mt-5">
+                        <section>
+                            <div class="about__container mt-5">
+                                <h2>About me</h2>
+                                <p>Natural from Brazil, actualy living in São Paulo - SP</p>
+                                <p>Loves IT, coffee and World of Warcraft&trade; </p>
+                            </div>                        
+                        </section>
+                    </div>
+                </div>
+            
+        
     </div>
-    <div class="container mt-4">
+
+
+    <div class="container p-5 mt-4">
         <div class="row">
             <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
-                <div class="wow fadeInDown container__projetos__wrapper" data-wow-delay=".12s">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5" data-wow-delay=".12s">
                     <h4>Trillo App</h4>
-                    <p>Booking app inspiration</p>
-                    <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                    <details>
+                        <summary>More Info</summary>
+                            <p>Booking app inspiration</p>                        
+                    </details>
+                    
+                    <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
                 </div>
             </div>
-            <div class="col-12 col-md-4 mt-2 mt-md-0">
-                <div class="wow fadeInUp container__projetos__wrapper" data-wow-delay=".4s">
+            <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5" data-wow-delay=".12s">
                     <h4>Trillo App</h4>
-                    <p>Booking app inspiration</p>
-                    <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                    <details>
+                        <summary>More Info</summary>
+                            <p>Booking app inspiration</p>                        
+                    </details>
+                    
+                    <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
                 </div>
             </div>
-            <div class="col-12 col-md-4 mt-2 mt-md-0">
-                <div class="wow fadeInUp container__projetos__wrapper" data-wow-delay=".6s">
+            <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5" data-wow-delay=".12s">
                     <h4>Trillo App</h4>
-                    <p>Booking app inspiration</p>
-                    <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                    <details>
+                        <summary>More Info</summary>
+                            <p>Booking app inspiration</p>                        
+                    </details>
+                    
+                    <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
                 </div>
             </div>
+            
         </div>        
     </div>
 
@@ -96,10 +122,10 @@
             window.onload = function () {
                 Particles.init({
                     selector: '.background',
-                    connectParticles: false,
-                    speed: .3,
+                    connectParticles: true,
+                    speed: .8,
                     maxParticles: 100,
-                    sizeVariations: 4,
+                    sizeVariations: 1,
                     height: '1000px',
                     color: ['#1E3226', '#799179']
                 });
