@@ -26,12 +26,12 @@
         <div class="collapse navbar-collapse" id="primary_navigation">
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a class="header__links  nav-link" href="#projetos" >Projetos</a>
+                    <a class="header__links  nav-link" href="#projetos">Projetos</a>
                 </li>
-                <li class="list-inline-item">
+                <!-- <li class="list-inline-item">
                     <a class="header__links nav-link" href='https://www.linkedin.com/in/carolinaportas/'
                         target='blank'>Sobre</a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </nav>
@@ -46,94 +46,113 @@
                 <!-- <button class="btn-custom" onclick="window.open('/contact.html')">Entrar em contato</button> -->
             </section>
         </div>
-            
-                <div class="row wow fadeInUp" data-wow-delay=".5s">
-                    <div class="col-12 mt-5">
-                        <section>
-                            <div class="about__container mt-5">
-                                <h2>About me</h2>
-                                <p>Natural from Brazil, actualy living in São Paulo - SP</p>
-                                <p>Loves IT, coffee and World of Warcraft&trade; </p>
-                            </div>                        
-                        </section>
+
+        <div class="row wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-12 mt-5">
+                <section>
+                    <div class="about__container text-center mt-5">
+                        <h2>About me</h2>
+                        <p>Living in São Paulo - SP</p>
+                        <p>Loves IT, coffee and World of Warcraft&trade; </p>
+                        <a class="nav-link" href='https://www.linkedin.com/in/carolinaportas/' target='blank'>
+                            <i class="about__container__icon fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mikashii" target="_blank" rel="noopener noreferrer"><i
+                                class="about__container__icon fab fa-github-square"></i></a>
                     </div>
-                </div>
-            
-        
-    </div>
+                </section>
+            </div>
+        </div>
 
 
-    <div class="container p-5 mt-4">
-        <div class="row">
-            <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
-                <div class="wow fadeInDown container__projetos__wrapper mt-5" data-wow-delay=".12s">
-                    <h4>Trillo App</h4>
-                    <details>
-                        <summary>More Info</summary>
-                            <p>Booking app inspiration</p>                        
-                    </details>
-                    
-                    <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
-                <div class="wow fadeInDown container__projetos__wrapper mt-5" data-wow-delay=".12s">
-                    <h4>Trillo App</h4>
-                    <details>
-                        <summary>More Info</summary>
-                            <p>Booking app inspiration</p>                        
-                    </details>
-                    
-                    <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mt-2 mt-md-0" id="projetos">
-                <div class="wow fadeInDown container__projetos__wrapper mt-5" data-wow-delay=".12s">
-                    <h4>Trillo App</h4>
-                    <details>
-                        <summary>More Info</summary>
-                            <p>Booking app inspiration</p>                        
-                    </details>
-                    
-                    <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
-                </div>
-            </div>
-            
-        </div>        
     </div>
 
 
 
+    <div class="container-fluid mt-4">
+        <div class="row p-2">
+            <div class="col-12 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
+                    <a href="https://github.com/mikashii/Trillo-app" target="_blank" class="col-6">
+                        <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
+                    </a>
+                    <div class="col-6">
+                        <h4>Trillo App</h4>
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not responsive)</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
+                    <a href="https://github.com/mikashii/be-the-hero-app" target="blank"><img
+                            src="/assets/beTheHero.png" class="img-fluid container__projetos__wrapper__img" alt=""></a>
+                    <div class="col-6">
+                        <h4>Be The Hero</h4>
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not reponsive)</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 mt-2 mt-md-0 mb-4" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
+                    <a href="https://mikashii.github.io/balls-object/" target="_blank" class="col-6">
+                        <img src="/assets/balls.png" class="img-fluid container__projetos__wrapper__img" alt="">
+                    </a>
+                    <div class="col-6">
+                        <h4>Bouncing Balls</h4>
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Some random javascript objects generator</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-        <canvas class="background" height="10000"></canvas>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-        <script src="node_modules/wow.js/dist/wow.min.js"></script>
-        <script src="node_modules/particlesjs/dist/particles.min.js"></script>
-        <script>
-            window.onload = function () {
-                Particles.init({
-                    selector: '.background',
-                    connectParticles: true,
-                    speed: .8,
-                    maxParticles: 100,
-                    sizeVariations: 1,
-                    height: '1000px',
-                    color: ['#1E3226', '#799179']
-                });
-            };
-        </script>
-        <script>
-            new WOW().init();
-        </script>
+
+
+
+    <div class="arrowToTop d-flex flex-column align-items-center">
+        <i style="color: #fff" class="fas fa-arrow-up"></i>
+    </div>
+    <canvas class="background" height="10000"></canvas>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+    <script>
+        window.onload = function () {
+            Particles.init({
+                selector: '.background',
+                connectParticles: true,
+                speed: .8,
+                maxParticles: 100,
+                sizeVariations: 1,
+                height: '1000px',
+                color: ['#1E3226', '#799179']
+            });
+        };
+    </script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

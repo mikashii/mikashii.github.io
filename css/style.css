@@ -75,6 +75,7 @@ html {
 
 body {
   background: #242423 !important;
+  height: fit-content;
 }
 
 .background {
@@ -127,7 +128,10 @@ body {
   margin-bottom: 15px;
 }
 
-.about__container h2 {
+.about__container {
+  margin-bottom: 6em;
+}
+.about__containerh2 {
   font-family: "Roboto", sans-serif;
   font-size: clamp(100%, 1rem, 24px);
   color: #f5cb5c;
@@ -135,7 +139,11 @@ body {
   font-weight: 500;
   text-align: center;
   letter-spacing: 6px;
-  margin-bottom: 15px;
+}
+.about__container__icon {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .hero__container p {
@@ -189,12 +197,26 @@ p, h4 {
 }
 
 .container__projetos__wrapper__img {
-  border-radius: 2%;
+  border-radius: 1%;
 }
 .container__projetos__wrapper__img:hover {
   box-shadow: -1px 4px 15px 1px rgba(255, 255, 255, 0.5);
   transition: ease-in 0.1s;
   cursor: pointer;
+}
+
+.arrowToTop {
+  position: relative;
+  float: right;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.arrowToTop:hover:after {
+  content: "Back To Top";
+  visibility: visible;
+  color: #fff;
+  display: flex;
 }
 
 /* RGB */
