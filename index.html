@@ -122,6 +122,7 @@
 
 
 
+<<<<<<< HEAD
     <div class="arrowToTop d-flex flex-column align-items-center">
         <i style="color: #fff" class="fas fa-arrow-up"></i>
     </div>
@@ -153,6 +154,36 @@
     <script>
         new WOW().init();
     </script>
+=======
+        <canvas class="background" height="10000"></canvas>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+        <script src="node_modules/wow.js/dist/wow.min.js"></script>
+        <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+        <script>
+            window.onload = function () {
+                Particles.init({
+                    selector: '.background',
+                    connectParticles: true,
+                    speed: .8,
+                    maxParticles: 100,
+                    sizeVariations: 1,
+                    height: '1000px',
+                    color: ['#1E3226', '#799179']
+                });
+            };
+        </script>
+        <script>
+            new wow().init();
+        </script>
+>>>>>>> 24f58cdb68c071a9f54ced54415707aef74173a9
 </body>
 
 </html>
