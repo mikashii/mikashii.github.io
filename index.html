@@ -54,11 +54,14 @@
                         <h2>About me</h2>
                         <p>Living in São Paulo - SP</p>
                         <p>Loves IT, coffee and World of Warcraft&trade; </p>
-                        <a class="nav-link" href='https://www.linkedin.com/in/carolinaportas/' target='blank'>
-                            <i class="about__container__icon fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/mikashii" target="_blank" rel="noopener noreferrer"><i
-                                class="about__container__icon fab fa-github-square"></i></a>
+                        <div class="about__container__links">
+                            <a class="nav-link" href='https://www.linkedin.com/in/carolinaportas/' target='blank'>
+                                <i class="about__container fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/mikashii" target="_blank" rel="noopener noreferrer">
+                                <i class="about__container fab fa-github-square"></i>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -73,7 +76,7 @@
         <div class="row p-2">
             <div class="col-12 mt-2 mt-md-0" id="projetos">
                 <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
-                    <a href="https://github.com/mikashii/Trillo-app" target="_blank" class="col-6">
+                    <a href="https://github.com/mikashii/Trillo-app" target="_blank" class="col-4">
                         <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
                     </a>
                     <div class="col-6">
@@ -88,8 +91,9 @@
             </div>
             <div class="col-12 mt-2 mt-md-0" id="projetos">
                 <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
-                    <a href="https://github.com/mikashii/be-the-hero-app" target="blank"><img
-                            src="/assets/beTheHero.png" class="img-fluid container__projetos__wrapper__img" alt=""></a>
+                    <a href="https://github.com/mikashii/be-the-hero-app" target="blank"  class="col-4">
+                        <img src="/assets/beTheHero.png" class="img-fluid container__projetos__wrapper__img" alt="">
+                    </a>
                     <div class="col-6">
                         <h4>Be The Hero</h4>
                         <details class="">
@@ -102,7 +106,7 @@
             </div>
             <div class="col-12 mt-2 mt-md-0 mb-4" id="projetos">
                 <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
-                    <a href="https://mikashii.github.io/balls-object/" target="_blank" class="col-6">
+                    <a href="https://mikashii.github.io/balls-object/" target="_blank" class="col-4">
                         <img src="/assets/balls.png" class="img-fluid container__projetos__wrapper__img" alt="">
                     </a>
                     <div class="col-6">
@@ -122,10 +126,10 @@
 
 
 
-<<<<<<< HEAD
-    <div class="arrowToTop d-flex flex-column align-items-center">
+    <div id="scrollTop" class="arrowToTop d-flex flex-column align-items-center">
         <i style="color: #fff" class="fas fa-arrow-up"></i>
     </div>
+    <script src="main.js"></script>
     <canvas class="background" height="10000"></canvas>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -154,36 +158,6 @@
     <script>
         new WOW().init();
     </script>
-=======
-        <canvas class="background" height="10000"></canvas>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-        <script src="node_modules/wow.js/dist/wow.min.js"></script>
-        <script src="node_modules/particlesjs/dist/particles.min.js"></script>
-        <script>
-            window.onload = function () {
-                Particles.init({
-                    selector: '.background',
-                    connectParticles: true,
-                    speed: .8,
-                    maxParticles: 100,
-                    sizeVariations: 1,
-                    height: '1000px',
-                    color: ['#1E3226', '#799179']
-                });
-            };
-        </script>
-        <script>
-            new wow().init();
-        </script>
->>>>>>> 24f58cdb68c071a9f54ced54415707aef74173a9
 </body>
 
 </html>
