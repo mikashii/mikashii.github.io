@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/af08fb0686.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Wow animation -->
+    <link rel="stylesheet" href="/node_modules/wow.js/css/libs/animate.css">
+    <title>Carolina Portas - My Projects</title>
+</head>
+
+<body>
+    <nav class="navbar-expand-sm navbar-light justify-content-between d-flex">
+        
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+        data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="primary_navigation">
+        <ul class="list-inline d-flex align-items-center justify-content-between">
+            <li class="list-inline-item">
+                <a class="header__links  nav-link" href="index.html">Back to home</a>
+            </li>
+            
+        </ul>
+    </div>
+    <a class="navbar-brand justify-self-end mr-0" href="index.html"><img src="assets/logo.png" alt="brand" class="img-fluid navbar-brand w-25"></a>
+    </nav>
+    
+    <div class="container">
+        <div class="row p-2">
+            <div class="col-12 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
+                    <a href="https://github.com/mikashii/Trillo-app" target="_blank" class="col-4">
+                        <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
+                    </a>
+                    <div class="col-6">
+                        <h4>Trillo App</h4>
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not responsive)</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 mt-2 mt-md-0" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
+                    <a href="https://github.com/mikashii/be-the-hero-app" target="blank"  class="col-4">
+                        <img src="/assets/beTheHero.png" class="img-fluid container__projetos__wrapper__img" alt="">
+                    </a>
+                    <div class="col-6">
+                        <h4>Be The Hero</h4>
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not reponsive)</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 mt-2 mt-md-0 mb-4" id="projetos">
+                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
+                    <a href="https://mikashii.github.io/balls-object/" target="_blank" class="col-4">
+                        <img src="/assets/balls.png" class="img-fluid container__projetos__wrapper__img" alt="">
+                    </a>
+                    <div class="col-6">
+                        <h4>Bouncing Balls</h4>
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Some random javascript objects generator</p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <script src="main.js"></script>
+    <canvas class="background" height="10000"></canvas>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+    <script src="node_modules/particlesjs/dist/particles.min.js"></script>
+    <script>
+        window.onload = function () {
+            Particles.init({
+                selector: '.background',
+                connectParticles: true,
+                speed: .8,
+                maxParticles: 100,
+                sizeVariations: 1,
+                height: '1000px',
+                color: ['#1E3226', '#799179']
+            });
+        };
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
