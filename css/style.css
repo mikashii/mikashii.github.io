@@ -172,18 +172,10 @@ p, h4 {
   cursor: pointer;
 }
 
-.arrowToTop {
-  position: relative;
-  float: right;
-  padding: 1em;
-  cursor: pointer;
-  font-size: 1.3rem;
-}
-.arrowToTop:hover:after {
-  content: "Back To Top";
-  visibility: visible;
+img.img-fluid.w-25.teste:after {
+  content: "Home";
   color: #fff;
-  display: flex;
+  font-size: 3rem;
 }
 
 /* RGB */
