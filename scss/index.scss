@@ -140,25 +140,3 @@ p + .btn:hover{
 p, h4{
     color: $color2!important;
 }
-.container__projetos__wrapper details summary{
-    color: #fff;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-.container__projetos__wrapper{
-
-    &__img{
-        border-radius: 1%;
-    }
-    &__img:hover{
-        box-shadow: -1px 4px 15px 1px rgba(#fff, .5);
-        transition: ease-in .1s;
-        cursor: pointer;
-    }
-}
-img.img-fluid.w-25.teste:after{
-    content: 'Home';
-    color: #fff;
-    font-size: 3rem;
-    
-}

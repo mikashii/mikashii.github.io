@@ -129,25 +129,4 @@ p, h4 {
   color: #e8eddf !important;
 }
 
-.container__projetos__wrapper details summary {
-  color: #fff;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
-.container__projetos__wrapper__img {
-  border-radius: 1%;
-}
-.container__projetos__wrapper__img:hover {
-  box-shadow: -1px 4px 15px 1px rgba(255, 255, 255, 0.5);
-  transition: ease-in 0.1s;
-  cursor: pointer;
-}
-
-img.img-fluid.w-25.teste:after {
-  content: "Home";
-  color: #fff;
-  font-size: 3rem;
-}
-
 /*# sourceMappingURL=index.css.map */

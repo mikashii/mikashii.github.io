@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/af08fb0686.js" crossorigin="anonymous"></script>
@@ -21,30 +22,14 @@
         <div class="row">
             <div class="col-12 p-4">
             <a class="justify-content-center d-flex" href="index.html">
-                <img src="assets/logo.png" alt="brand" class="img-fluid w-25 teste">
+                <img src="assets/logo.png" alt="brand" width=50em; class="img-fluid">
                 <p>Home</p>
             </a>
         </div>
             </div>
     </div>   
+    <!--
     
-    <div class="container">
-        <div class="row p-2">
-            <div class="col-12 mt-2 mt-md-0" id="projetos">
-                <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
-                    <a href="https://github.com/mikashii/Trillo-app" target="_blank" class="col-4">
-                        <img src="/assets/trillo-app.png" class="img-fluid container__projetos__wrapper__img" alt="">
-                    </a>
-                    <div class="col-6">
-                        <h4>Trillo App</h4>
-                        <details class="">
-                            <summary>More Info</summary>
-                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not responsive)</p>
-                        </details>
-                    </div>
-
-                </div>
-            </div>
             <div class="col-12 mt-2 mt-md-0" id="projetos">
                 <div class="wow fadeInDown container__projetos__wrapper mt-5 d-flex" data-wow-delay=".12s">
                     <a href="https://github.com/mikashii/be-the-hero-app" target="blank"  class="col-4">
@@ -77,14 +62,61 @@
             </div>
         </div>
     </div>
+    -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="project__container">
+                    <a href="https://github.com/mikashii/Trillo-app">
+                        <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="projects__summary">
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not responsive)</p>
+                        </details>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-12 col-md-4">
+                <div class="project__container">
+                    <a href="https://github.com/mikashii/be-the-hero-app">
+                        <img src="/assets/beTheHero.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="projects__summary">
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not responsive)</p>
+                        </details>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-12 col-md-4">
+                <div class="project__container">
+                    <a href="https://github.com/mikashii/Trillo-app">
+                        <img src="/assets/trillo-app.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="projects__summary">
+                        <details class="">
+                            <summary>More Info</summary>
+                            <p>Booking app inspiration created with basic HTML5 and CSS3 (not responsive)</p>
+                        </details>
+                    </div>
+                </div>
+            </div>   
+            
 
 
 
 
 
+
+
+    </div>
     
-    <script src="main.js"></script>
-    <canvas class="background" height="10000"></canvas>
+    
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -95,20 +127,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="node_modules/wow.js/dist/wow.min.js"></script>
-    <script src="node_modules/particlesjs/dist/particles.min.js"></script>
-    <script>
-        window.onload = function () {
-            Particles.init({
-                selector: '.background',
-                connectParticles: true,
-                speed: .8,
-                maxParticles: 100,
-                sizeVariations: 1,
-                height: '1000px',
-                color: ['#1E3226', '#799179']
-            });
-        };
-    </script>
+    <script src="node_modules/particlesjs/dist/particles.min.js"></script>    
     <script>
         new WOW().init();
     </script>

@@ -2,33 +2,6 @@
 /* RGB */
 /* GRADIENT */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap");
-body {
-  color: #fff !important;
-}
-
-.contact__container {
-  display: flex;
-  justify-content: center;
-}
-
-.left__container {
-  border: 1px solid yellow;
-  display: flex;
-  flex-direction: column;
-}
-
-.right__container {
-  border: 1px solid red;
-}
-
-.header__container img {
-  width: 80px;
-  padding: 10px;
-}
-
-/* RGB */
-/* GRADIENT */
 html {
   margin: 0;
   padding: 0;
@@ -155,27 +128,6 @@ p + .btn:hover {
 
 p, h4 {
   color: #e8eddf !important;
-}
-
-.container__projetos__wrapper details summary {
-  color: #fff;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
-.container__projetos__wrapper__img {
-  border-radius: 1%;
-}
-.container__projetos__wrapper__img:hover {
-  box-shadow: -1px 4px 15px 1px rgba(255, 255, 255, 0.5);
-  transition: ease-in 0.1s;
-  cursor: pointer;
-}
-
-img.img-fluid.w-25.teste:after {
-  content: "Home";
-  color: #fff;
-  font-size: 3rem;
 }
 
 /* RGB */
