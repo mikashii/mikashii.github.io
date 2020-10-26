@@ -17,24 +17,7 @@
 </head>
 
 <body>
-    <nav class="nav navbar-expand-sm navbar-light p-2">
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-            data-target="#primary_navigation" aria-controls="primary_navigation" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="primary_navigation">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a class="header__links  nav-link" href="/projects.html">Projects</a>
-                </li>
-                <!-- <li class="list-inline-item">
-                    <a class="header__links nav-link" href='https://www.linkedin.com/in/carolinaportas/'
-                        target='blank'>Sobre</a>
-                </li> -->
-            </ul>
-        </div>
-    </nav>
+
     <div class="container hero__container">
         <div class="row">
             <section class="col-12 wow fadeInUp d-flex flex-column align-items-center" data-wow-delay=".1s">
@@ -51,7 +34,7 @@
             <div class="col-12 mt-5">
                 <section>
                     <div class="about__container text-center mt-5">
-                        <h2>About me</h2>
+                        
                         <p>Living in São Paulo - SP</p>
                         <p>Loves IT, coffee and World of Warcraft&trade; </p>
                         <div class="about__container__links">
@@ -68,13 +51,9 @@
         </div>
     </div>
 
-
-
-
-
     
     <script src="main.js"></script>
-    <canvas class="background" height="10000"></canvas>
+    <canvas class="background"></canvas>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -90,11 +69,10 @@
         window.onload = function () {
             Particles.init({
                 selector: '.background',
-                connectParticles: true,
-                speed: .8,
-                maxParticles: 100,
-                sizeVariations: 1,
-                height: '1000px',
+                connectParticles: false,
+                speed: 1,
+                maxParticles: 200,
+                sizeVariations: 2,                
                 color: ['#1E3226', '#799179']
             });
         };

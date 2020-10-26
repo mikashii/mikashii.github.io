@@ -10,17 +10,18 @@ html {
 }
 
 body {
-  background: #242423 !important;
+  background: #333533 !important;
   height: fit-content;
 }
 
 .background {
   position: absolute;
   display: block;
+  background-repeat: initial;
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: #242423;
+  background-color: #333533;
 }
 
 .header__links {
@@ -64,9 +65,6 @@ body {
   margin-bottom: 15px;
 }
 
-.about__container {
-  margin-bottom: 6em;
-}
 .about__containerh2 {
   font-family: "Roboto", sans-serif;
   font-size: clamp(100%, 1rem, 24px);
@@ -119,14 +117,26 @@ body {
   border: 1px solid #f5cb5c;
 }
 
-p + .btn:hover {
-  transform: scale(1.12);
-  transition: ease-in-out 0.1s;
-  border: 1px solid #f5cb5c;
-}
-
 p, h4 {
   color: #e8eddf !important;
+}
+
+h3.skills-title {
+  color: #f5cb5c;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(100%, 1rem, 18px);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.container__skills__wrapper span {
+  color: #fff;
+}
+
+.container__skills ul {
+  color: #f5cb5c;
+  list-style: none;
 }
 
 /*# sourceMappingURL=index.css.map */
